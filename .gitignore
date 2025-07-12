@@ -1,0 +1,26 @@
+
+# 機密情報
+.env
+
+# Pythonキャッシュ
+__pycache__/
+*.pyc
+
+# VSCodeなどエディタ関連
+.vscode/
+.idea/
+
+# OSによる一時ファイル
+.DS_Store
+Thumbs.db
+
+# テスト出力
+htmlcov/
+.coverage
+coverage.xml
+
+# Streamlit実行ファイルの一時データ
+.streamlit/
+
+# その他
+*.log

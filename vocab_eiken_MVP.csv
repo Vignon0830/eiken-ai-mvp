@@ -1,0 +1,20 @@
+id,word,pos,meaning_ja,example,grade,source
+10001,cat,n,猫,A cat is lying in the sun.,5,https://www.ei-navi.jp/dictionary/content/cat/
+10002,happy,adj,うれしい,I am happy.,5,https://www.ei-navi.jp/dictionary/content/happy/
+10003,sometimes,adv,時々,He is sometimes absent from school.,4,https://www.ei-navi.jp/dictionary/content/sometimes/
+10004,people,n,人々,Many people visit the park.,4,https://www.ei-navi.jp/dictionary/content/people/
+10005,enjoy,v,楽しむ,I enjoy playing soccer.,3,https://www.ei-navi.jp/dictionary/content/enjoy/
+10006,environment,n,環境,We must protect the environment.,3,https://www.ei-navi.jp/dictionary/content/environment/
+10007,enough,adj,十分な,We have enough time.,3,https://www.ei-navi.jp/dictionary/content/enough/
+10008,ability,n,能力,He is a man of great ability.,Pre-2,https://www.ei-navi.jp/dictionary/content/ability/
+10009,abroad,adv,海外で,I want to study abroad.,Pre-2,https://www.ei-navi.jp/dictionary/content/abroad/
+10010,accept,v,受け入れる,She accepted the job offer.,Pre-2,https://www.ei-navi.jp/dictionary/content/accept/
+10011,accident,n,事故,He had a car accident.,Pre-2,https://www.ei-navi.jp/dictionary/content/accident/
+10012,embarrassed,adj,当惑した,He felt embarrassed.,2,https://ejje.weblio.jp/content/embarrassed
+10013,discuss,v,議論する,They discussed the problem.,2,https://www.ei-navi.jp/dictionary/content/discuss/
+10014,donate,v,寄付する,He donated money to charity.,2,https://www.ei-navi.jp/dictionary/content/donate/
+10015,volunteer,n,ボランティア,She works as a volunteer at the hospital.,2,https://www.ei-navi.jp/dictionary/content/volunteer/
+10016,candidate,n,候補者,She is a candidate for class president.,Pre-1,https://www.ei-navi.jp/dictionary/content/candidate/
+10017,burden,n,負担,The tax is a burden on the poor.,Pre-1,https://www.ei-navi.jp/dictionary/content/burden/
+10018,abundance,n,豊富さ,The region has an abundance of natural resources.,1,https://www.ei-navi.jp/dictionary/content/abundance/
+10019,meticulous,adj,綿密な,She is meticulous about her work.,1,https://www.ei-navi.jp/dictionary/content/meticulous/

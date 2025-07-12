@@ -1,0 +1,8 @@
+﻿id,grade,source,content,summary
+30001,5,https://www.eiken.or.jp/eiken-iba/sample.html,,少年が自己紹介をし、家族について話す短い文章。
+30002,4,https://www.eiken.or.jp/eiken-iba/sample.html,,母と子が週末の計画について話し合う短い文章。
+30003,3,https://simple.wikipedia.org/wiki/Japan,"Japan is a country in East Asia. It is a group of islands near the east coast of Korea, China and Russia. The Pacific Ocean lies to the east of Japan and the Sea of Japan is to the west. Most people live on one of Japan’s four main islands. The largest island, Honshu, has the most people. Tokyo is the capital of Japan and its biggest city.",日本の位置と島々、人口分布について紹介する文章。
+30004,Pre-2,https://www.eiken.or.jp/eiken-iba/sample.html,,大学生が海外ホームステイで経験した文化の違いについて述べる文章。
+30005,2,https://en.wikipedia.org/wiki/Mount_Fuji,"Mount Fuji (富士山) is the highest mountain in Japan, with a height of 3,776 meters. It is an active volcano about 100 kilometers southwest of Tokyo. Mount Fuji is a symbol of Japan, often shown in art and photographs. The volcano’s last eruption was in 1707.",日本で最も高い山である富士山の地理と特色について説明する文章。
+30006,Pre-1,https://www.eiken.or.jp/eiken-iba/sample.html,,ポーランド出身の女性科学者（マリー・キュリー）の研究とノーベル賞受賞に関する伝記の一節。
+30007,1,https://en.wikipedia.org/wiki/Global_warming,"Global warming is the long-term rise in the average temperature of the Earth’s climate system. It is mainly caused by increased greenhouse gas emissions from human activities such as burning fossil fuels and deforestation. As more heat is trapped in the atmosphere, the Earth’s average temperature rises. Global warming has led to rising sea levels, changing precipitation patterns, and more frequent extreme weather events around the world.",地球温暖化の原因（温室効果ガスの増加）と気候への影響を説明する科学的な文章。

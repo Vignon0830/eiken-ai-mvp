@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  flowise:
+    image: flowiseai/flowise:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_TYPE=sqlite
+    volumes:
+      - ./flowise_data:/root/.flowise

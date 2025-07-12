@@ -1,4 +1,5 @@
 import os
+import sys
 import streamlit as st
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -11,15 +12,16 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_INDEX = os.getenv("PINECONE_INDEX")
 
-# --- 必須環境変数チェック ---
-required_vars = {
-    "OPENAI_API_KEY": OPENAI_API_KEY,
-    "PINECONE_API_KEY": PINECONE_API_KEY,
-    "PINECONE_INDEX": PINECONE_INDEX
-}
-missing = [k for k, v in required_vars.items() if not v]
-if missing:
-    raise EnvironmentError(f"以下の環境変数が設定されていません: {', '.join(missing)}")
+# --- 必須環境変数チェック（CIのpytest時はスキップ）---
+if "pytest" not in sys.modules:
+    required_vars = {
+        "OPENAI_API_KEY": OPENAI_API_KEY,
+        "PINECONE_API_KEY": PINECONE_API_KEY,
+        "PINECONE_INDEX": PINECONE_INDEX
+    }
+    missing = [k for k, v in required_vars.items() if not v]
+    if missing:
+        raise EnvironmentError(f"以下の環境変数が設定されていません: {', '.join(missing)}")
 
 # --- クライアント初期化 ---
 client = OpenAI(api_key=OPENAI_API_KEY)

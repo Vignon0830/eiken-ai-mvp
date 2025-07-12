@@ -2,8 +2,6 @@ import os
 import sys
 import streamlit as st
 from dotenv import load_dotenv
-from openai import OpenAI
-from pinecone import Pinecone
 from typing import List
 
 # --- 環境変数の読み込み ---
@@ -12,8 +10,11 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_INDEX = os.getenv("PINECONE_INDEX")
 
-# --- 必須環境変数チェック（CIのpytest時はスキップ）---
+# --- CIテスト（pytest）実行時はクライアント生成もスキップ ---
 if "pytest" not in sys.modules:
+    from openai import OpenAI
+    from pinecone import Pinecone
+
     required_vars = {
         "OPENAI_API_KEY": OPENAI_API_KEY,
         "PINECONE_API_KEY": PINECONE_API_KEY,
@@ -23,10 +24,12 @@ if "pytest" not in sys.modules:
     if missing:
         raise EnvironmentError(f"以下の環境変数が設定されていません: {', '.join(missing)}")
 
-# --- クライアント初期化 ---
-client = OpenAI(api_key=OPENAI_API_KEY)
-pc = Pinecone(api_key=PINECONE_API_KEY)
-index = pc.Index(PINECONE_INDEX)
+    client = OpenAI(api_key=OPENAI_API_KEY)
+    pc = Pinecone(api_key=PINECONE_API_KEY)
+    index = pc.Index(PINECONE_INDEX)
+else:
+    client = None
+    index = None
 
 # --- ベクトル生成 ---
 def get_embedding(text: str) -> List[float]:
@@ -90,7 +93,7 @@ if "history" not in st.session_state:
     st.session_state.history = []
 
 # --- メイン処理 ---
-if query:
+if query and client and index:
     with st.spinner("検索中..."):
         try:
             namespace = get_namespace(level, mode)

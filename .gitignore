@@ -24,3 +24,5 @@ coverage.xml
 
 # その他
 *.log
+
+echo "OpenAI API Keys_Eiken MVP.txt" >> .gitignore

@@ -1,6 +1,6 @@
-
 # 機密情報
 .env
+OpenAI API Keys_Eiken MVP.txt
 
 # Pythonキャッシュ
 __pycache__/
@@ -22,7 +22,5 @@ coverage.xml
 # Streamlit実行ファイルの一時データ
 .streamlit/
 
-# その他
+# その他ログファイルなど
 *.log
-
-echo "OpenAI API Keys_Eiken MVP.txt" >> .gitignore
